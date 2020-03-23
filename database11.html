@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>database1</title>
+    <link rel="stylesheet" href="mycss.css">
+    <link rel="stylesheet" href="myjs.js">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</head>
+<style>
+
+    .mytabl{
+
+        padding-top: 150px;
+    }
+</style>
+
+<body>
+    <nav class="nav">
+        <div class="container">
+          <div class="logo">
+            <a href="home1.html"><img src="sattendance.png" alt=""></a>
+         </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a class="mytag" href="Profile.html">Profile</a></li>
+                    <a href="notifications.html" class="dropdown1"> <img src="icons8-push-notifications-50.png" alt=""></a>
+                    <li><a href="Courses.html">Courses</a></li>
+
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+
+    <section class="home">
+        <div class="mytabl">
+
+       
+        <table class="table">
+           
+            <thead>
+              <tr>
+                <th scope="col">ID</th>
+                <th scope="col">name</th>
+                <th scope="col">Assignment1</th>
+                <th scope="col">Assignment2</th>
+                <th scope="col">Assignment3</th>
+                <th scope="col">Assignment4</th>
+                <th scope="col">Assignment5</th>
+               
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">20171802</th>
+                <td>Marwan</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>5</td>
+                <td>4</td>
+               
+              </tr>
+              <tr>
+                <th scope="row">20171810</th>
+                <td>Abd El Rahman</td>
+                <td>5</td>
+                <td>5</td>
+                <td>5</td>
+                <td>5</td>
+                <td>5</td>
+                
+              </tr>
+              <tr>
+                <th scope="row">20171822</th>
+                <td>Ahmed</td>
+                <td>4</td>
+                <td>3</td>
+                <td>2</td>
+                <td>5</td>
+                <td>5</td>
+              </tr>
+              <tr>
+                <th scope="row">20171819</th>
+                <td>Amr</td>
+                <td>4</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>1</td>
+               
+              </tr>
+              <tr>
+                <th scope="row">20171820</th>
+                <td>Sayed</td>
+                <td>5</td>
+                <td>4</td>
+                <td>5</td>
+                <td>3</td>
+                <td>2</td>
+               
+              </tr>
+              <tr>
+                <th scope="row">20171828</th>
+                <td>Mohamed</td>
+                <td>0</td>
+                <td>2</td>
+                <td>1</td>
+                <td>4</td>
+                <td>3</td>
+             
+              </tr>
+              <tr>
+                <th scope="row">20171829</th>
+                <td>Eslam</td>
+                <td>4</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>1</td>
+               
+              </tr>
+              <tr>
+                <th scope="row">20171810</th>
+                <td>Medhat</td>
+                <td>5</td>
+                <td>4</td>
+                <td>5</td>
+                <td>3</td>
+                <td>2</td>
+               
+              <tr>
+                <th scope="row">20171811</th>
+                <td>Kareem</td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>0</td>
+                <td>4</td>
+               
+              </tr>
+              <tr>
+                <th scope="row">20171825</th>
+                <td>Mahmoud</td>
+                <td>3</td>
+                <td>0</td>
+                <td>5</td>
+                <td>4</td>
+                <td>2</td>
+               
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+    </section>
+
+
+    <!-- Jquery needed -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+    <script>
+        $(window).scroll(function () {
+            if ($(document).scrollTop() > 50) {
+                $('.nav').addClass('affix');
+                console.log("OK");
+            } else {
+                $('.nav').removeClass('affix');
+            }
+        });
+    </script>
+
+</body>
+
+</html>
